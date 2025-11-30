@@ -160,7 +160,7 @@ console.log(contentOfEndroll.length);
 
 //エンドロールの最後に表示する写真とメッセージ設定
 const ending = {
-  img: "https://ibb.co/YTFhch5R",
+  img: "thankyou.png",
   massage:"20日間 + フォローアップ 関係者の方々、本当にありがとうございました。居場所が1つ増えました!"
 }
 
