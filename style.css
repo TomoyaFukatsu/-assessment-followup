@@ -1,0 +1,81 @@
+/* This is a 'stylesheet'. 
+It defines how the elements appear when they are rendered by the browser. */
+
+html {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: monospace;
+  height: 100%;
+  justify-content: center;
+}
+
+#color-button {
+  border-radius: 8px;
+  font-size: 20pt;
+  height: 100px;
+  width: 200px;
+}
+
+#thankyou-button {
+  border-radius: 8px;
+  font-size: 20pt;
+  height: 100px;
+  width: 200px;
+  x: 100px;
+  y: 500px;
+}
+
+/*!important で絶対非表示*/
+.hidden {
+  display: none !important;
+}
+
+
+.endroll-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 40px;
+}
+
+/* スクロール  あえて戻るボタンとか作らず暗転のまま*/
+.endroll {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  animation: roll 220s linear forwards;
+}
+
+.endroll img.end-image {
+  width: 300px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.endroll p.end-massage {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fffa;
+}
+
+@keyframes roll {
+  0% {transform: translateY(4000px);}
+  100% {transform: translateY(0px);}
+}
